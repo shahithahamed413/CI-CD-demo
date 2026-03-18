@@ -3,15 +3,15 @@ name : CI PIPELINE
 on : [push]
 
 jobs :
- build :
-  runs-on: ubuntu-latest
+  build :
+     runs-on: ubuntu-latest
 
-  steps:
-    - name : checkout code 
-      uses : actions/checkou@v3
+     steps :
+      - name : checkout code 
+        uses : actions/checkou@v3
 
-    - name : print message
-      run:  echo "CI/CD pipeline running succesfully"
+      - name : print message
+        run:  echo "CI/CD pipeline running succesfully"
     
-    - name : list files 
-      run : ls
+      - name : list files 
+        run : ls
